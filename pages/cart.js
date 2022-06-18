@@ -6,6 +6,7 @@ import {
   removeFromCart,
 } from '../redux/cart.slice';
 import styles from '../styles/CartPage.module.css';
+import Link from 'next/link';
 
 const CartPage = () => {
   const cart = useSelector((state) => state.cart);
@@ -55,6 +56,7 @@ const CartPage = () => {
             </div>
           ))}
           <h2>Grand Total: $ {getTotalPrice()}</h2>
+          <Link href="/checkout">checkout</Link>
         </>
       )}
     </div>

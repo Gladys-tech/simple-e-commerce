@@ -14,13 +14,14 @@ import {getStorage } from 'firebase/storage'
 //   };
 
 const firebaseConfig = {
-    apiKey: "AIzaSyBzf6dXo63wiERETLy0-RrVQXceJERBvAA",
-    authDomain: "products-be2fb.firebaseapp.com",
-    projectId: "products-be2fb",
-    storageBucket: "products-be2fb.appspot.com",
-    messagingSenderId: "1083248750712",
-    appId: "1:1083248750712:web:cfa60b2dee18fab29ebd8d"
-  };
+  apiKey: "AIzaSyBJaZqdti73p6_W5VLhL4cImtIP3yLPJho",
+  authDomain: "fir-todo-19dea.firebaseapp.com",
+  projectId: "fir-todo-19dea",
+  storageBucket: "fir-todo-19dea.appspot.com",
+  messagingSenderId: "546043032199",
+  appId: "1:546043032199:web:382ef00bd32eef2a4a7e22",
+  measurementId: "G-27XG6KV0ZC"
+};
 
   export const app = initializeApp(firebaseConfig);
 export const storage = getStorage(app);
