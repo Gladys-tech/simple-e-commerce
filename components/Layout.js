@@ -2,11 +2,13 @@ import styles from '../styles/Layout.module.css';
 import Nav from './Nav';
 import Footer from './Footer';
 // import Header from './Header';
+import {useState} from 'react'
 
 function Layout({children}) {
+  const [active, setActive] = useState("home");
   return (
       <>
-      <Nav/>
+      <Nav setActive={setActive} active={active}/>
     <div className={styles.container}>
         <main className={styles.main}>
             {/* <Header/> */}

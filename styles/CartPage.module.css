@@ -45,3 +45,11 @@
     margin: 0.5rem;
     font-size: 1rem;
   }
+  .checkout a{
+    background-color: purple;
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+    margin: 20px;
+    text-decoration: none;
+  }

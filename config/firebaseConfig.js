@@ -1,17 +1,7 @@
 import { initializeApp } from "firebase/app";
-// import firebase from "firebase/app";
-//  import { getAnalytics } from "firebase/analytics";
 import { getFirestore } from "firebase/firestore";
-import {getStorage } from 'firebase/storage'
-// const firebaseConfig = {
-//     apiKey: "AIzaSyCbNQ6C7Ul1dny_JRk1Ia22tkkZuuim4i0",
-//     authDomain: "e-commerce-ea003.firebaseapp.com",
-//     projectId: "e-commerce-ea003",
-//     storageBucket: "e-commerce-ea003.appspot.com",
-//     messagingSenderId: "565918497410",
-//     appId: "1:565918497410:web:19d7c6748ea2d0b2ca929b",
-//     measurementId: "G-N2J2EG8YRP"
-//   };
+import {getStorage } from 'firebase/storage';
+import {getAuth} from 'firebase/auth'
 
 const firebaseConfig = {
   apiKey: "AIzaSyBJaZqdti73p6_W5VLhL4cImtIP3yLPJho",
@@ -23,10 +13,10 @@ const firebaseConfig = {
   measurementId: "G-27XG6KV0ZC"
 };
 
-  export const app = initializeApp(firebaseConfig);
+export const app = initializeApp(firebaseConfig);
 export const storage = getStorage(app);
 // const analytics = getAnalytics(app);
-// const auth = getAuth();
+ export const auth = getAuth(app);
 
 // export const db = firebase.firestore(app);
 export const db = getFirestore(app);

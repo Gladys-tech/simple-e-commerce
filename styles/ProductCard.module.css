@@ -21,13 +21,15 @@
     text-transform: uppercase;
     border: 2px solid black;
     cursor: pointer;
+    border-radius: 10px;
   }
   
   .button:hover {
     border-radius: 10px;
-    background: #8e2de2;
-    background: -webkit-linear-gradient(to right, #8e2de2, #4a00e0);
-    background: linear-gradient(to right, #8e2de2, #4a00e0);
+    border: none;
+    background:purple;
+    /* background: -webkit-linear-gradient(to right, #8e2de2, #4a00e0);
+    background: linear-gradient(to right, #8e2de2, #4a00e0); */
     color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }

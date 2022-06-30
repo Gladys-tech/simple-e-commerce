@@ -7,6 +7,7 @@ import {
 } from '../redux/cart.slice';
 import styles from '../styles/CartPage.module.css';
 import Link from 'next/link';
+import { Button, PopoverBody, UncontrolledPopover } from "reactstrap";
 
 const CartPage = () => {
   const cart = useSelector((state) => state.cart);
@@ -38,8 +39,23 @@ const CartPage = () => {
               <div className={styles.image}>
                 <Image src={item.image} height="90" width="65" />
               </div>
-              <p>{item.product}</p>
+              <p>{item.title}</p>
               <p>$ {item.price}</p>
+              <div>
+              <Button
+                className=" mt-2"
+                color="default"
+                id="popover644119284"
+                type="button"
+              >
+                click for description
+              </Button>
+              <UncontrolledPopover placement="top" target="popover644119284">
+               <PopoverBody>
+                {item.description}
+               </PopoverBody>
+               </UncontrolledPopover>
+              </div>
               <p>{item.quantity}</p>
               <div className={styles.buttons}>
                 <button onClick={() => dispatch(incrementQuantity(item.id))}>
@@ -56,7 +72,9 @@ const CartPage = () => {
             </div>
           ))}
           <h2>Grand Total: $ {getTotalPrice()}</h2>
-          <Link href="/checkout">checkout</Link>
+          <div className={styles.checkout}>
+          <Link href="/checkout">checkout</Link> 
+          </div>
         </>
       )}
     </div>
