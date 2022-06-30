@@ -63,7 +63,7 @@ function Login() {
           
         />
         <p >
-          Don't have an account{" "}
+          Dont have an account{" "}
           <Link href="/signup">
             <a >sign Up</a>
           </Link>
