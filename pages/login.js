@@ -5,7 +5,7 @@ import { auth } from "../config/firebaseConfig";
 import { useRouter } from "next/router";
 import Link from "next/link";
 
-function login() {
+function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState('')
@@ -78,4 +78,4 @@ function login() {
     </div>
   );
 }
-export default login
+export default Login

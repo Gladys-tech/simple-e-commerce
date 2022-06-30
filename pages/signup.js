@@ -5,7 +5,7 @@ import { auth } from "../config/firebaseConfig";
 import { useRouter } from "next/router";
 import Link from "next/link";
 
-const  signup = () => {
+const  Signup = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
@@ -75,4 +75,4 @@ const  signup = () => {
     </div>
   );
 }
-export default signup
+export default Signup
